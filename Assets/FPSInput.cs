@@ -15,7 +15,7 @@ public class FPSInput : MonoBehaviour
     }
     void Update()
     {
-        //transform.Translate(0, speed, 0);
+        transform.Translate(0, speed, 0);
         float deltaX = Input.GetAxis("Horizontal") * speed;
         float deltaZ = Input.GetAxis("Vertical") * speed;
         Vector3 movement = new Vector3(deltaX, 0, deltaZ);
