@@ -18,7 +18,7 @@ public class Scene : MonoBehaviour
             enemy.transform.Rotate(0, angle, 0);
             float size = Random.Range(0, 5);
             enemy.transform.localScale = new Vector3(2, size, 2);
-            GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
+            enemy.GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
         }
     }
 }
